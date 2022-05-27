@@ -1,0 +1,28 @@
+# action.yml
+name: 'MongoDB Atlas Pause'
+description: 'Pause a MongoDB Atlas Cluster'
+inputs:
+  public_api_key:
+    description: 'MongoDB Atlas Public API Key'
+    required: true
+  private_api_key:
+    description: 'MongoDB Atlas Private API Key'
+    required: true
+  org_id:
+    description: 'MongoDB Atlas Organization ID'
+    required: true
+  project_id:
+    description: 'MongoDB Atlas Project ID'
+    required: true
+  cluster_name:
+    description: 'MongoDB Atlas Cluster Name'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.public_api_key }}
+    - ${{ inputs.private_api_key }}
+    - ${{ inputs.org_id }}
+    - ${{ inputs.private_id }}
+    - ${{ inputs.cluster_name }}
