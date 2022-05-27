@@ -1,0 +1,15 @@
+on: push
+jobs:
+  pause_atlas_cluster:
+    runs-on: ubuntu-latest
+    name: Pause Atlas Cluster
+    steps:
+      - name: Pause
+        uses: ./
+        id: pause-atlas
+        with:
+          public_api_key: 'public'
+          private_api_key: 'private'
+          org_id: 'org'
+          project_id: 'project'
+          cluster_name: 'cluster'
