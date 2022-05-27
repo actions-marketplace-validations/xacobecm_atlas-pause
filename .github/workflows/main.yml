@@ -5,7 +5,7 @@ jobs:
     name: Pause Atlas Cluster
     steps:
       - name: Pause
-        uses: ./
+        uses: xacobecm/atlas-pause@master
         id: pause-atlas
         with:
           public_api_key: 'public'
