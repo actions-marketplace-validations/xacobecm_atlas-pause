@@ -1,7 +1,7 @@
 on: push
 jobs:
   pause_atlas_cluster:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     name: Pause Atlas Cluster
     steps:
       - name: Pause
