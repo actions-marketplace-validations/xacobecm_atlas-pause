@@ -1,2 +1,2 @@
 #!/bin/bash
-atlascli -h
+$HOME/.local/bin/atlascli -h
