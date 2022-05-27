@@ -1,4 +1,4 @@
-FROM bitnami/python:3.8.13
-RUN pip install mongodbatlas
+FROM python:3.8.13-alpine
+RUN pip install atlascli
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
