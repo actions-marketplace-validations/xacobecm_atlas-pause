@@ -8,9 +8,6 @@ inputs:
   private_api_key:
     description: 'MongoDB Atlas Private API Key'
     required: true
-  org_id:
-    description: 'MongoDB Atlas Organization ID'
-    required: true
   project_id:
     description: 'MongoDB Atlas Project ID'
     required: true
@@ -23,6 +20,5 @@ runs:
   args:
     - ${{ inputs.public_api_key }}
     - ${{ inputs.private_api_key }}
-    - ${{ inputs.org_id }}
     - ${{ inputs.project_id }}
     - ${{ inputs.cluster_name }}
