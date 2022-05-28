@@ -8,8 +8,9 @@ jobs:
         uses: xacobecm/atlas-pause@master
         id: pause-atlas
         with:
-          public_api_key: 'public'
-          private_api_key: 'private'
-          org_id: 'org'
-          project_id: 'project'
-          cluster_name: 'cluster'
+          public_api_key: ${{ secrets.ATLAS_PUBLIC_API_KEY }}
+          private_api_key: ${{ secrets.ATLAS_PUBLIC_API_KEY }}
+          org_id: ${{ secrets.ATLAS_PUBLIC_API_KEY }}
+          project_id: ${{ secrets.ATLAS_PUBLIC_API_KEY }}
+          cluster_name: ${{ secrets.ATLAS_PUBLIC_API_KEY }}
+
