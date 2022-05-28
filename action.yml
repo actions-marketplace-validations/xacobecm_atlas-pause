@@ -1,6 +1,9 @@
 # action.yml
 name: 'MongoDB Atlas Pause'
 description: 'Pause a MongoDB Atlas Cluster'
+branding:
+  icon: pause
+  color: yellow
 inputs:
   public_api_key:
     description: 'MongoDB Atlas Public API Key'
